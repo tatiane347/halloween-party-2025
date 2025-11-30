@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Halloween Party 2025</title>
+<!-- FAVICON - Ícone da aba do navegador -->
+<link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎃</text></svg>">
+<style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #1a1a1a;
+    color: #f4f1e9;
+  }
+  
+  /* HEADER COM IMAGEM HERO */
+  header {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                      url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><radialGradient id="a" cx="50%" cy="50%"><stop offset="0%" stop-color="%23ff6b35"/><stop offset="50%" stop-color="%23f7931e"/><stop offset="100%" stop-color="%23c0392b"/></radialGradient><radialGradient id="b" cx="50%" cy="50%"><stop offset="0%" stop-color="%238e44ad"/><stop offset="50%" stop-color="%239b59b6"/><stop offset="100%" stop-color="%236a1b9a"/></radialGradient></defs><rect width="1200" height="600" fill="%23111111"/><circle cx="300" cy="200" r="150" fill="url(%23a)" opacity="0.8"/><circle cx="900" cy="250" r="120" fill="url(%23b)" opacity="0.7"/><path d="M100 450 Q200 380 300 450 Q400 420 500 470 Q600 440 700 480 Q800 450 900 490 Q1000 460 1100 500" stroke="%23ff6b35" stroke-width="20" fill="none" opacity="0.6"/><text x="600" y="550" font-family="Arial" font-size="40" fill="%23f7931e" text-anchor="middle" opacity="0.3">👻🕷️🎃</text></svg>');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 8rem 1rem 6rem;
+    position: relative;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="3" fill="%23ff6b35" opacity="0.3"/><circle cx="80" cy="30" r="2" fill="%23f7931e" opacity="0.4"/><circle cx="40" cy="70" r="4" fill="%238e44ad" opacity="0.3"/><path d="M10 90 Q50 80 90 95" stroke="%23c0392b" stroke-width="2" fill="none" opacity="0.2"/></svg>') repeat;
+    animation: float 20s ease-in-out infinite;
+    pointer-events: none;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  header h1 {
+    font-size: 4rem;
+    margin: 0 0 1rem 0;
+    text-shadow: 3px 3px 8px #000;
+    position: relative;
+    z-index: 2;
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from { text-shadow: 3px 3px 8px #000, 0 0 20px #ff6b35; }
+    to { text-shadow: 3px 3px 8px #000, 0 0 30px #f7931e, 0 0 40px #c0392b; }
+  }
+  
+  header p {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #ffeb3b;
+    text-shadow: 2px 2px 4px #000;
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  nav {
+    background: rgba(51, 51, 51, 0.95);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  nav a {
+    color: #f4f1e9;
+    margin: 0 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    background: #ff6b35;
+    transition: all 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ff6b35;
+  }
+  
+  nav a:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  
+  section {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+  }
+  
+  section h2 {
+    border-bottom: 3px solid #ff6b35;
+    padding-bottom: 0.75rem;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+  section h2::before {
+    content: '🎃';
+    margin-right: 0.5rem;
+  }
+  
+  .details, .location, .signup {
+    margin-bottom: 3rem;
+    background: rgba(255,255,255,0.05);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255,107,53,0.2);
+  }
+  
+  /* FORMULÁRIO ESTILOS */
+  .signup form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    max-width: 400px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .signup input, .signup button {
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .signup input {
+    background: rgba(255,255,255,0.1);
+    color: #f4f1e9;
+    border: 2px solid rgba(255,107,53,0.3);
+  }
+  
+  .signup input::placeholder {
+    color: rgba(244,241,233,0.7);
+  }
+  
+  .signup input:focus {
+    outline: none;
+    border-color: #ff6b35;
+    box-shadow: 0 0 15px rgba(255,107,53,0.5);
+  }
+  
+  .signup button {
+    background: linear-gradient(135deg, #ff6b35, #f7931e);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255,107,53,0.4);
+  }
+  
+  .signup button:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255,107,53,0.6);
+    background: linear-gradient(135deg, #f7931e, #ff6b35);
+  }
+  
+  .signup button:disabled {
+    background: #666;
+    cursor: not-allowed;
+    transform: none;
+  }
+  
+  /* MENSAGEM DE SUCESSO */
+  .success-message {
+    display: none;
+    background: linear-gradient(135deg, #00ff88, #32cd32);
+    color: #000;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    margin: 1rem 0;
+    animation: successSlide 0.8s ease-out;
+    box-shadow: 0 10px 30px rgba(0,255,136,0.4);
+    font-weight: bold;
+  }
+  
+  .success-message.show {
+    display: block;
+  }
+  
+  @keyframes successSlide {
+    0% { opacity: 0; transform: translateY(30px) scale(0.9); }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
+  }
+  
+  .success-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    animation: bounce 1s ease-in-out infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+  }
+  
+  .form-hidden {
+    display: none !important;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 2.5rem 1rem;
+    background: linear-gradient(135deg, #111, #222);
+    font-size: 0.95rem;
+    border-top: 3px solid #ff6b35;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      padding: 6rem 1rem 4rem;
+      min-height: 50vh;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    nav {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    nav a {
+      margin: 0.25rem 0;
+    }
+    .success-message {
+      padding: 1.5rem;
+      margin: 0.5rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Halloween Party 2025 🎃</h1>
+  <p>Venha para a noite mais assustadora e divertida do ano!</p>
+</header>
+
+<nav>
+  <a href="#details">Detalhes</a>
+  <a href="#location">Local</a>
+  <a href="#signup">Inscrição</a>
+</nav>
+
+<section id="details" class="details">
+  <h2>Detalhes do Evento</h2>
+  <p><strong>Data:</strong> 31 de Outubro de 2025</p>
+  <p><strong>Horário:</strong> 20h até meia-noite</p>
+  <p>Venha fantasiado! Teremos concurso de fantasias, música ao vivo, DJ especial, drinks temáticos e muitas surpresas assustadoras! 👻🕷️</p>
+</section>
+
+<section id="location" class="location">
+  <h2>Local do Evento</h2>
+  <p><strong>📍 Casa Assombrada</strong><br>Rua das Bruxas, 666<br>Cidade do Mistério</p>
+  <p>Estacionamento disponível | Fácil acesso de transporte público | Entrada VIP disponível</p>
+</section>
+
+<section id="signup" class="signup">
+  <h2>Inscreva-se Agora</h2>
+  
+  <!-- FORMULÁRIO ORIGINAL -->
+  <form id="halloweenForm">
+    <input type="text" id="userName" placeholder="Nome completo" required />
+    <input type="email" id="userEmail" placeholder="E-mail" required />
+    <button type="submit" id="submitBtn">🎃 Garantir meu lugar 👻</button>
+  </form>
+  
+  <!-- MENSAGEM DE SUCESSO -->
+  <div id="successMessage" class="success-message">
+    <div class="success-icon">🎉✨</div>
+    <h3>✅ Enviado com Sucesso!</h3>
+    <p><strong id="userNameDisplay"></strong>,</p>
+    <p>Enviamos uma confirmação para <strong id="userEmailDisplay"></strong></p>
+    <p>Você receberá todas as informações do evento no seu e-mail! 👻</p>
+    <button onclick="resetForm()" style="margin-top: 1rem; background: #ff6b35; color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 8px; cursor: pointer; font-weight: bold;">Nova Inscrição</button>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Halloween Party & Desenvolvido Por Tatiane Souza. Todos os direitos reservados.
+</footer>
+
+<script>
+  const form = document.getElementById('halloweenForm');
+  const successMessage = document.getElementById('successMessage');
+  const submitBtn = document.getElementById('submitBtn');
+  const userNameInput = document.getElementById('userName');
+  const userEmailInput = document.getElementById('userEmail');
+  
+  form.addEventListener('submit', function(e) {
+    e.preventDefault(); // Impede envio real
+    
+    // Pega os dados do formulário
+    const name = userNameInput.value;
+    const email = userEmailInput.value;
+    
+    // Mostra mensagem de sucesso
+    document.getElementById('userNameDisplay').textContent = name;
+    document.getElementById('userEmailDisplay').textContent = email;
+    successMessage.classList.add('show');
+    
+    // Esconde formulário
+    form.classList.add('form-hidden');
+    
+    // Desabilita botão
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Enviado! 🎃';
+    
+    // Scroll suave para mensagem
+    successMessage.scrollIntoView({ behavior: 'smooth' });
+    
+    // Simula envio (console.log para debug)
+    console.log('Inscrição enviada:', { name, email });
+  });
+  
+  function resetForm() {
+    form.classList.remove('form-hidden');
+    successMessage.classList.remove('show');
+    form.reset();
+    submitBtn.disabled = false;
+    submitBtn.textContent = '🎃 Garantir meu lugar 👻';
+  }
+</script>
+
+</body>
+</html>
