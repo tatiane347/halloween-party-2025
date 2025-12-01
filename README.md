@@ -27,3 +27,15 @@ Landing page one-page completa com:
 Perfeita para desenvolvedores frontend iniciantes! 🚀
 <img width="987" height="1843" alt="Screenshot 2025-11-30 at 11-46-55 Halloween Party 2025" src="https://github.com/user-attachments/assets/836dd7df-6b1a-436e-88d3-82005c1b4cff" />
 
+Aqui está meu perfil LinkedIn:
+🔗 https://www.linkedin.com/in/tatiane-nascimento-68b0622bb/
+
+Aqui está minha Landing Page Halloween Party 2025 completa com formulário JS﻿ 🎃👻:
+🌐 https://tatiane347.github.io/halloween-party-2025/
+
+Se algum recrutador de empresa ou contratante para projetos freelancer quiser me contratar para trabalho, entre em contato﻿ 📩
+Email: tatianen25@gmail.com
+WhatsApp: (11) 91052-6709 📱
+
+Aqui está o repositório GitHub﻿:
+💻 https://tatiane347.github.io/faq-acordeao-multi-tecnologia/
