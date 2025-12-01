@@ -38,4 +38,4 @@ Email: tatianen25@gmail.com
 WhatsApp: (11) 91052-6709 📱
 
 Aqui está o repositório GitHub﻿:
-💻 https://tatiane347.github.io/faq-acordeao-multi-tecnologia/
+💻 https://github.com/tatiane347/halloween-party-2025
